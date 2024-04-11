@@ -7,32 +7,25 @@ import SignupWidget from '../components/SignupWidget/SignupWidget.jsx';
 // Define your work experiences data
 const experiences = [
   {
-    logo: './images/slack.png',
-    organization: 'Slack',
-    jobTitle: 'Software Engineer',
-    startYear: 2016,
+    logo: './images/byu.jpeg',
+    organization: 'BYU-Pathway',
+    jobTitle: 'Degree Planner Specialist',
+    startYear: 2022,
     endYear: 'Present'
   },
   {
-    logo: './images/spotify.jpeg',
-    organization: 'Spotify',
-    jobTitle: 'Software Engineer',
-    startYear: 2014,
-    endYear: 2015
+    logo: './images/211.png',
+    organization: 'United Way',
+    jobTitle: 'Information Specialist',
+    startYear: 2020,
+    endYear: 2021
   },
   {
-    logo: './images/audible.webp',
-    organization: 'Audible',
-    jobTitle: 'Software Engineer',
-    startYear: 2012,
-    endYear: 2013
-  },
-  {
-    logo: './images/microsoft (2).svg',
-    organization: 'Microsoft',
-    jobTitle: 'Software Engineer',
-    startYear: 2010,
-    endYear: 2011
+    logo: './images/lawoffice.jpeg',
+    organization: 'Law Office of Carmen DiAmore',
+    jobTitle: 'Paralegal',
+    startYear: 2020,
+    endYear: 2021
   }
   // Add more experiences as needed
 ];
@@ -44,22 +37,22 @@ const skills = [
 
 const articles = [
   {
-    date: 'Dec 25, 2023',
-    title: 'Miguel Squad in the house',
-    content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-    link: 'https://medium.com/the-research-nest/everything-you-need-to-know-about-react-ab24da4275ea',
+    date: 'Current',
+    title: 'BYU-Pathway',
+    content: '"As a degree planner specialist, I have the privilege of assisting numerous students every day in charting their academic paths. With precision and attention to detail, I meticulously craft degree and certificate plans that align with each students unique goals and aspirations. Guided by their individual timelines and preferences, I ensure that every plan is tailored to meet their specific needs. Its immensely rewarding to play a role in empowering students to navigate their academic journey with confidence and success."',
+    link: 'https://www.byupathway.edu',
   },
   {
-    date: 'Dec 25, 2023',
-    title: 'Lorem ipsum dolor sit amet',
-    content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-    link: 'https://medium.com/the-research-nest/everything-you-need-to-know-about-react-ab24da4275ea',
+    date: 'January, 2023',
+    title: 'Information Specialist',
+    content: '"During my role as an information specialist at United Way, I assisted individuals by connecting them to various private and public organizations that provided goods and services designed to help people. Serving as a bridge between individuals in need and the resources available in their communities, I facilitated access to essential support systems. Through effective communication and resourcefulness, I ensured that individuals received appropriate assistance tailored to their specific needs. My dedication to connecting people with vital resources underscored United Way 211s mission to improve lives and strengthen communities through collaborative efforts."',
+    link: 'https://metrounitedway.org',
   },
   {
-    date: 'Sep 2, 2020',
-    title: 'Lorem ipsum dolor sit amet',
-    content: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-    link: 'https://medium.com/javascript-scene/the-missing-introduction-to-react-62837cb2fd76',
+    date: 'January, 2022',
+    title: 'Immigration Paralegal',
+    content: '"During my tenure as a paralegal at an immigration law firm, I specialized in managing all Spanish-speaking cases, overseeing approximately 100 immigration cases ranging from asylum applications to naturalization and adjustment of status petitions. My role involved providing comprehensive support to clients throughout the legal process, including document preparation, communication with government agencies, and facilitating client meetings. Working closely with attorneys, I ensured that each case adhered to legal requirements and deadlines, while also offering empathetic guidance to clients navigating complex immigration procedures. My dedication to serving Spanish-speaking clients within the realm of immigration law underscored my commitment to facilitating access to legal services and advocating for the rights of diverse communities."',
+
   },
 ];
 
@@ -72,17 +65,13 @@ const Home = () => {
             <img className="avatar" src='./images/miguel.png' alt="Avatar" />
             <div>
               <time>{/* Add your date here */}</time>
-              <h1>Software Engineer, Father, and Believer</h1>
+              <h1>Adolfo T. Arellano's Portfolio</h1>
             </div>
           </div>
           <p className="intro-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Work Experience
           </p>
-          <div className="social-media-icons">
-            <img src="./images/ficon.webp" alt="Facebook" />
-            <img src="./images/xicon.png" alt="Twitter" />
-            {/* Add more social media icons as needed */}
-          </div>
+
         </main>
 
         <div className="articles-card">
@@ -101,18 +90,17 @@ const Home = () => {
       <div className="right-side">
 
       <SignupWidget
-        title={'Stay up to date'}
-        content={'Get notified when I publish something new, and unsubscribe at any time.'}
+        title={'Send me a message'}
+        content={'I will contact you as soon as possible.'}
       />
         {/* WorkWidget component */}
         <WorkWidget
           title="My Work Experience"
-          content="Check out my previous work experiences."
+          content="Here is a list of my revelant work experience."
           experiences={experiences}
         />
     <SkillsWidget
               title={"Skills"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
               skills={skills}
       />
 

@@ -3,88 +3,68 @@ import UsesSection from "../../components/UsesSection/UsesSection";
 import Profile from "../../components/Profile/Profile";
 
 export const metadata = {
-
   title: 'Portfolio - Uses',
   description: 'The uses page of my portfolio.',
 }
+
 const items = [
   {
-    groupName: 'Workstation',
+    groupName: 'Security Tools',
     items: [
       {
-        title: '16” MacBook Pro, M1 Max, 64GB RAM (2022)',
+        title: 'SIEM (Security Information and Event Management) System',
         description:
-          'I was using an Intel-based 16” MacBook Pro prior to this and the difference is night and day. I’ve never heard the fans turn on a single time, even under the incredibly heavy loads I put it through with our various launch simulations.',
+          'SIEM systems collect and analyze security data from multiple sources across an organization to identify and respond to security threats in real-time.',
       },
       {
-        title: 'Dell UltraSharp U2717D',
+        title: 'Firewalls',
         description:
-          'I have two of these monitors and they’re great. I’ve had them for years and they’ve been rock solid.',
+          'Firewalls monitor and control incoming and outgoing network traffic based on predetermined security rules to prevent unauthorized access to or from a network.',
       },
       {
-        title: 'Keychron K2',
+        title: 'Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)',
         description:
-          'I’ve been using this keyboard for a few years now and I love it. It’s wireless, has a great feel, and the battery lasts forever.',
+          'IDS and IPS monitor network traffic for signs of malicious activity or policy violations. IDS detect threats, while IPS block or prevent detected threats.',
       },
       {
-        title: 'Logitech MX Master 3',
+        title: 'Endpoint Protection Platforms (EPP)',
         description:
-          'I’ve been using this mouse for a few years now and it’s great. It’s wireless, has a great feel, and the battery lasts forever.',
+          'EPP solutions protect endpoint devices such as desktops, laptops, and mobile devices from malware, ransomware, and other cyber threats.',
       },
       {
-        title: 'Audio-Technica ATH-M50x',
+        title: 'Vulnerability Assessment Tools',
         description:
-          'I’ve been using these headphones for a few years now and they’re great. They’re comfortable, sound good, and are built like a tank.',
+          'Vulnerability assessment tools scan networks, systems, and applications for security vulnerabilities, providing insights to remediate and strengthen security posture.',
       },
       {
-        title: 'Rain Design mStand',
+        title: 'Penetration Testing Tools',
         description:
-          'I’ve been using this stand for my MacBook Pro for a few years now and it’s great. It’s sturdy, looks good, and keeps my laptop cool.',
+          'Penetration testing tools simulate cyber attacks to identify vulnerabilities and weaknesses in a system or network before malicious actors exploit them.',
       },
     ],
   },
   {
-    groupName: 'Development',
+    groupName: 'Security Practices',
     items: [
       {
-        title: 'Visual Studio Code',
+        title: 'Security Policies and Procedures',
         description:
-          'I use VS Code for all of my development work. It’s fast, has great extensions, and is highly customizable.',
+          'Establishing and enforcing security policies and procedures to govern the organization’s approach to cybersecurity, including access controls, data protection, and incident response.',
       },
       {
-        title: 'iTerm2 + Oh My Zsh',
+        title: 'Security Awareness Training',
         description:
-          'I use iTerm2 as my terminal and Oh My Zsh as my shell. It’s a great combination. I use the Agnoster theme with the Fira Code font.',
-      },
-    ],
-  },
-  {
-    groupName: 'Design',
-    items: [
-      {
-        title: 'Figma',
-        description:
-          'I use Figma for all of my design work. It’s fast, has great collaboration features, and is highly customizable.',
+          'Educating employees and stakeholders on cybersecurity best practices, recognizing phishing attempts, and adhering to security protocols to mitigate human error and prevent breaches.',
       },
       {
-        title: 'Whimsical',
+        title: 'Incident Response Plan',
         description:
-          'I use Whimsical for all of my wireframing and flowcharting. It’s fast, has great collaboration features, and is highly customizable.',
-      },
-    ],
-  },
-  {
-    groupName: 'Productivity',
-    items: [
-      {
-        title: 'Notion',
-        description:
-          'I use Notion for all of my note-taking and knowledge management. It’s fast, has great collaboration features, and is highly customizable.',
+          'Developing and implementing a comprehensive incident response plan to effectively detect, respond to, and recover from cybersecurity incidents such as data breaches or cyber attacks.',
       },
       {
-        title: 'Alfred',
+        title: 'Regular Security Audits and Assessments',
         description:
-          'I use Alfred for all of my productivity needs. It’s fast, has great features, and is highly customizable.',
+          'Conducting regular security audits and assessments to evaluate the effectiveness of security controls, identify weaknesses, and ensure compliance with regulatory requirements.',
       },
     ],
   },
@@ -93,9 +73,9 @@ const items = [
 export default function Uses() {
   return (
     <div>
-    <Profile
-        title="My Equipment"
-        content="As a computer science programmer, my equipment typically consists of the following:"
+      <Profile
+        title="Cybersecurity Tools & Practices"
+        content="As a cybersecurity analyst, I utilize various tools and practices to safeguard systems and networks from cyber threats. Here are some of the key components:"
       />
       <UsesSection items={items} />
     </div>

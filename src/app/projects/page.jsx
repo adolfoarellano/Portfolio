@@ -9,35 +9,21 @@ export const metadata = {
 
 const companies = [
   {
-    name: "Company 1",
-    description: "Description of company 1",
-    link: "https://www.company1.com",
+    name: "BYU-PATHWAY",
+    description: "Fail Registration for BYU-Online Students",
+    link: "https://www.byupathway.edu",
   },
   {
-    name: "Company 2",
-    description: "Description of company 2",
-    link: "https://www.company2.com",
+    name: "United Way 211",
+    description: "Housing Project for Low-Income Families",
+    link: "https://211utah.org/?utm_source=google&utm_medium=google_ads&utm_campaign=211&gad_source=1&gclid=CjwKCAjw8diwBhAbEiwA7i_sJZY7MJ3YXeUFRzSOWRBaWqpU1B0Hfo4uUkDxEFdXFOoOmd0RCZlzmBoCLoIQAvD_BwE",
   },
   {
-    name: "Company 3",
-    description: "Description of company 3",
-    link: "https://www.company3.com",
+    name: "Carmen DiAmore Law Firm",
+    description: "Asylum Cases for Latin American Immigrants",
+    link: "https://www.immigrateus.com",
   },
-  {
-    name: "Company 4",
-    description: "Description of company 4",
-    link: "https://www.company4.com",
-  },
-  {
-    name: "Company 5",
-    description: "Description of company 5",
-    link: "https://www.company5.com",
-  },
-  {
-    name: "Company 6",
-    description: "Description of company 6",
-    link: "https://www.company6.com",
-  },
+
 ];
 
 export default function Projects() {
@@ -45,7 +31,7 @@ export default function Projects() {
     <div>
       <Profile
         title="Projects"
-        content="This is a list of the projects I have worked on."
+        content="Take a look at the projects I have worked on:"
       />
 
       <div className="company-display">
